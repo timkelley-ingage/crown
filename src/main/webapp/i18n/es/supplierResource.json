@@ -4,6 +4,7 @@
       "home": {
         "title": "Supplier Resources",
         "createLabel": "Crear nuevo Supplier Resource",
+        "createSupplierLabel": "Who is offering this resource",
         "createOrEditLabel": "Crear o editar Supplier Resource",
         "search": "Buscar Supplier Resource",
         "notFound": "Ningún Supplier Resources encontrado"
