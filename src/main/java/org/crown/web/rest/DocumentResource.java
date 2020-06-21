@@ -34,7 +34,7 @@ public class DocumentResource {
     @PostMapping("/document/upload")
     public ResponseEntity uploadDocument(@RequestParam("file") MultipartFile file) throws BadRequestAlertException, URISyntaxException {
         try {
-            blobStorageRepository.createBlob(file.getName(), file.getInputStream(), file.getSize());
+            blobStorageRepository.createBlob(file.getOriginalFilename(), file.getInputStream(), file.getSize());
         } catch (IOException io) {
             throw new BadRequestAlertException("Error uploading file", ENTITY_NAME, "idnull");
         }

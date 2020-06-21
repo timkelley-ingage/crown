@@ -55,8 +55,10 @@ spring:
     cache: false
 
 azure:
-  endpoint: http://crownwebapp.blob.core.windows.net
-  sasToken:
+  containerName: crown-webapp-storage-container
+  accountName: crownwebapp
+  endpoint: https://crownwebapp.blob.core.windows.net
+  accountKey: ${AZURE_ACCOUNT_KEY}
 
 server:
   port: 8080
