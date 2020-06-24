@@ -54,6 +54,15 @@ spring:
   thymeleaf:
     cache: false
 
+<<<<<<< Updated upstream
+=======
+azure:
+  containerNamePrefix: crown-webapp
+  accountName: crownwebapp
+  endpoint: https://crownwebapp.blob.core.windows.net
+  accountKey: ${AZURE_ACCOUNT_KEY}
+
+>>>>>>> Stashed changes
 server:
   port: 8080
 
